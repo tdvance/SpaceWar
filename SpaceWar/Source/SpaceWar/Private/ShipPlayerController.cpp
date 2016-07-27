@@ -13,4 +13,14 @@ void AShipPlayerController::BeginPlay() {
 	Super::BeginPlay();
 }
 
+void AShipPlayerController::Tick(float DeltaSeconds) {
+	Super::Tick(DeltaSeconds);
+	AimTowardCrosshair();
+}
 
+void AShipPlayerController::AimTowardCrosshair() {
+	if (!GetControlledShip()) {
+		return;
+	}
+
+}
